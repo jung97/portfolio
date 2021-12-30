@@ -33,3 +33,10 @@
  {
   box-sizing: border-box;
 }
+
+/* Typography */
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color-pink);
+}
