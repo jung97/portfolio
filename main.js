@@ -1,6 +1,6 @@
 'use strict'
 
-// Make navbar transparent when it is on the top -> navbar 투명 
+// navbar가 상단에 있을 때 투명하게 만들기  
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
@@ -13,7 +13,8 @@ document.addEventListener('scroll', () => {
 
 
 
-// Handle scrolling when tapping on the navbar menu
+
+// 탐색 모음 메뉴를 탭할 때 스크롤 처리
 const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener('click', (event) => {
     const target = event.target;
@@ -48,11 +49,11 @@ document.addEventListener('scroll', () => {
 //show "arrow up" button when scrolling down
 const arrowup = document.querySelector('.arrow-up');
 document.addEventListener('scroll', () => {
-   if(window.scrollY > homeHeight /2) {
-       arrowup.classList.add('visible');
-   }  else {
-       arrowup.classList.remove('visible');
-   }
+  if(window.scrollY > homeHeight /2) {
+      arrowup.classList.add('visible');
+  }  else {
+      arrowup.classList.remove('visible');
+  }
 });
 
 // Handle click on the arrow up button
